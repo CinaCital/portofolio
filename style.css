@@ -1,0 +1,8 @@
+* {
+  background-color: pink;
+  padding: auto;
+}
+.large {
+  font-size: 300%;
+  text-align: center;
+}
