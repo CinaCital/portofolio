@@ -2,7 +2,17 @@
   background-color: pink;
   padding: auto;
 }
-.large {
-  font-size: 300%;
-  text-align: center;
+header {
+  font-size: 80px;
+  color: red;
+}
+
+.form-login {
+  width: 100%;
+  max-width: 330px;
+  padding: 15px;
+  margin: auto;
+}
+.form-login .form-floating:focus-within {
+  z-index: 2;
 }
