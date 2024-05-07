@@ -1,114 +1,143 @@
+/* Reset CSS untuk menghilangkan margin, padding, dan border default */
+*,
 *:before,
 *:after {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
 }
+
+/* Pengaturan dasar untuk body */
 body {
-  background-color: #080710;
-}
-.background {
-  width: 430px;
-  height: 520px;
-  position: absolute;
-  transform: translate(-50%, -50%);
-  left: 50%;
-  top: 50%;
-}
-.background .shape {
-  height: 200px;
-  width: 200px;
-  position: absolute;
-  border-radius: 50%;
-}
-.shape:first-child {
-  background: linear-gradient(#1845ad, #23a2f6);
-  left: -80px;
-  top: -80px;
-}
-.shape:last-child {
-  background: linear-gradient(to right, #ff512f, #f09819);
-  right: -30px;
-  bottom: -80px;
-}
-form {
-  height: 520px;
-  width: 400px;
-  background-color: rgba(255, 255, 255, 0.13);
-  position: absolute;
-  transform: translate(-50%, -50%);
-  top: 50%;
-  left: 50%;
-  border-radius: 10px;
-  backdrop-filter: blur(10px);
-  border: 2px solid rgba(255, 255, 255, 0.1);
-  box-shadow: 0 0 40px rgba(8, 7, 16, 0.6);
-  padding: 50px 35px;
-}
-form * {
-  font-family: "Poppins", sans-serif;
-  color: #ffffff;
-  letter-spacing: 0.5px;
-  outline: none;
-  border: none;
-}
-form h3 {
-  font-size: 32px;
-  font-weight: 500;
-  line-height: 42px;
-  text-align: center;
+  background-color: #080710; /* Warna latar belakang */
+  font-family: "Poppins", sans-serif; /* Font family */
+  color: #ffffff; /* Warna teks */
 }
 
+/* Background styling */
+.background {
+  width: 430px; /* Lebar background */
+  height: 520px; /* Tinggi background */
+  position: absolute; /* Posisi absolut */
+  top: 50%; /* Posisi di tengah vertikal */
+  left: 50%; /* Posisi di tengah horizontal */
+  transform: translate(-50%, -50%); /* Menggeser ke tengah */
+}
+
+/* Bentuk yang menutupi background */
+.background .shape {
+  position: absolute; /* Posisi absolut */
+  border-radius: 50%; /* Bentuk lingkaran */
+}
+
+/* Bentuk pertama (gradient biru) */
+.shape:first-child {
+  background: linear-gradient(#1845ad, #23a2f6); /* Gradient biru */
+  height: 200px; /* Tinggi */
+  width: 200px; /* Lebar */
+  left: -80px; /* Posisi horizontal */
+  top: -80px; /* Posisi vertikal */
+}
+
+/* Bentuk kedua (gradient merah) */
+.shape:last-child {
+  background: linear-gradient(to right, #ff512f, #f09819); /* Gradient merah */
+  height: 200px; /* Tinggi */
+  width: 200px; /* Lebar */
+  right: -30px; /* Posisi horizontal */
+  bottom: -80px; /* Posisi vertikal */
+}
+
+/* Styling untuk form login */
+form {
+  height: 520px; /* Tinggi form */
+  width: 400px; /* Lebar form */
+  background-color: rgba(255, 255, 255, 0.13); /* Warna latar belakang form dengan transparansi */
+  position: absolute; /* Posisi absolut */
+  top: 50%; /* Posisi di tengah vertikal */
+  left: 50%; /* Posisi di tengah horizontal */
+  transform: translate(-50%, -50%); /* Menggeser ke tengah */
+  border-radius: 10px; /* Border radius */
+  backdrop-filter: blur(10px); /* Efek blur pada latar belakang */
+  border: 2px solid rgba(255, 255, 255, 0.1); /* Border dengan transparansi */
+  box-shadow: 0 0 40px rgba(8, 7, 16, 0.6); /* Shadow */
+  padding: 50px 35px; /* Padding */
+}
+
+/* Judul form login */
+form h3 {
+  font-size: 32px; /* Ukuran font */
+  font-weight: 500; /* Ketebalan font */
+  line-height: 42px; /* Jarak antar baris */
+  text-align: center; /* Posisi teks di tengah */
+  margin-bottom: 30px; /* Jarak bawah */
+}
+
+/* Label untuk input fields */
 label {
-  display: block;
-  margin-top: 30px;
-  font-size: 16px;
-  font-weight: 500;
+  font-size: 16px; /* Ukuran font */
+  font-weight: 500; /* Ketebalan font */
+  display: block; /* Menjadikan label sebagai blok */
+  margin-bottom: 10px; /* Jarak bawah */
 }
+
+/* Input fields */
 input {
-  display: block;
-  height: 50px;
-  width: 100%;
-  background-color: rgba(255, 255, 255, 0.07);
-  border-radius: 3px;
-  padding: 0 10px;
-  margin-top: 8px;
-  font-size: 14px;
-  font-weight: 300;
+  height: 50px; /* Tinggi input field */
+  width: 100%; /* Lebar input field */
+  background-color: rgba(255, 255, 255, 0.07); /* Warna latar belakang input field dengan transparansi */
+  border-radius: 3px; /* Border radius */
+  padding: 0 10px; /* Padding */
+  margin-bottom: 20px; /* Jarak bawah */
+  font-size: 14px; /* Ukuran font */
+  font-weight: 300; /* Ketebalan font */
+  color: #ffffff; /* Warna teks */
 }
+
+/* Placeholder untuk input fields */
 ::placeholder {
-  color: #e5e5e5;
+  color: #e5e5e5; /* Warna teks placeholder */
 }
+
+/* Tombol login */
 button {
-  margin-top: 50px;
-  width: 100%;
-  background-color: #ffffff;
-  color: #080710;
-  padding: 15px 0;
-  font-size: 18px;
-  font-weight: 600;
-  border-radius: 5px;
-  cursor: pointer;
+  width: 100%; /* Lebar tombol */
+  background-color: #ffffff; /* Warna latar belakang tombol */
+  color: #080710; /* Warna teks tombol */
+  padding: 15px 0; /* Padding */
+  font-size: 18px; /* Ukuran font */
+  font-weight: 600; /* Ketebalan font */
+  border-radius: 5px; /* Border radius */
+  cursor: pointer; /* Kursor */
+  margin-top: 20px; /* Jarak atas */
 }
+
+/* Social media login */
 .social {
-  margin-top: 30px;
-  display: flex;
+  margin-top: 30px; /* Jarak atas */
+  display: flex; /* Tampilan flex */
+  justify-content: center; /* Posisi tengah secara horizontal */
 }
+
+/* Icon sosial media */
 .social div {
-  background: red;
-  width: 150px;
-  border-radius: 3px;
-  padding: 5px 10px 10px 5px;
-  background-color: rgba(255, 255, 255, 0.27);
-  color: #eaf0fb;
-  text-align: center;
+  background: red; /* Warna latar belakang */
+  width: 150px; /* Lebar */
+  border-radius: 3px; /* Border radius */
+  padding: 5px 10px 10px 5px; /* Padding */
+  background-color: rgba(255, 255, 255, 0.27); /* Warna latar belakang dengan transparansi */
+  color: #eaf0fb; /* Warna teks */
+  text-align: center; /* Posisi teks di tengah */
+  margin-right: 15px; /* Jarak kanan */
 }
+
+/* Styling untuk hover pada icon sosial media */
 .social div:hover {
-  background-color: rgba(255, 255, 255, 0.47);
+  background-color: rgba(255, 255, 255, 0.47); /* Warna latar belakang saat hover dengan transparansi */
 }
+
+/* Margin kanan untuk ikon pada icon sosial media */
 .social .fb {
-  margin-left: 25px;
-}
-.social i {
-  margin-right: 4px;
+  margin-left: 15px; /* Jarak kanan */
+  margin-right: 0px;
 }
