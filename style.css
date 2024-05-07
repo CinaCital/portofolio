@@ -1,4 +1,4 @@
-* {
+body {
   background-color: pink;
   padding: auto;
 }
@@ -8,11 +8,9 @@ header {
 }
 
 .form-login {
-  width: 100%;
-  max-width: 330px;
-  padding: 15px;
-  margin: auto;
+  text-align: center;
+  border-color: black;
 }
-.form-login .form-floating:focus-within {
-  z-index: 2;
+.form-floating {
+  border-color: black;
 }
