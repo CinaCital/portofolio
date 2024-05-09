@@ -1,0 +1,14 @@
+.koran {
+  background-color: aqua;
+}
+img {
+  float: left;
+  width: 150;
+  height: 150;
+}
+footer {
+  clear: both;
+}
+body {
+  background-color: red;
+}
