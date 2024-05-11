@@ -1,24 +1,5 @@
-.koran {
-  background-color: aqua;
-}
-.koran .kucing1 {
-  margin-top: 10px;
-}
-img {
-  margin-top: 10px;
-  float: left;
-  width: 150;
-  height: 150;
-}
-
-footer {
-  clear: both;
-}
 body {
   background-color: red;
-}
-.card-body {
-  background-color: aqua;
 }
 .card {
   margin-top: 10px;
