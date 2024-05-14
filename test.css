@@ -9,5 +9,6 @@ body {
 }
 .flex-container {
   display: flex;
+  gap: 10px;
   background-color: dodgerblue;
 }
